@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn{
-    @apply rounded-full bg-black active:scale-110 transition font-LilitaOne
+    @apply rounded-full bg-black active:scale-110 transition font-LilitaOne text-white
 }
 .pic{
     max-width: 100%;
