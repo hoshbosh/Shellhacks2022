@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
+    fontFamily:{
+      'LilitaOne':['"Lilita One"', 'Cursive']
+    },
     extend: {},
   },
   plugins: [],
