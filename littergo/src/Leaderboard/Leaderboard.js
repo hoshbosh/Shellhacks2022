@@ -22,7 +22,7 @@ function PlayersList(){
     playerList.forEach(
         (element)=>{
             playerComponenets.push(
-                <div className='font-LilitaOne text-md p-8'>
+                <div className='font-LilitaOne text-md p-8 text-white'>
                     {element}
                 </div>
             )
@@ -39,7 +39,7 @@ export function Leaderboard(){
                 Go Back
           </Link>
             <div className='row-span-6 bg-slate-900 rounded-3xl col-span-2 grid grid-rows-12'>
-                <h1 className='font-LilitaOne text-center text-3xl underline row-span-2'>
+                <h1 className='font-LilitaOne text-center text-3xl underline row-span-2 text-white'>
                     Leaderboard
                 </h1>
                 <PlayersList/>
