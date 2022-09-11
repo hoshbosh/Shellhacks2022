@@ -1,17 +1,16 @@
 import './App.css';
-import TitleCard from './components/TitleCard';
-import Player from './components/Profile';
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import {Dashboard} from './Dashboard/Dashboard'
+import { Leaderboard } from './Leaderboard/Leaderboard';
 function App() {
   return (
-    <div className='p-8 grid grid-cols-2 grid-rows-5 border-slate-0 h-screen bg-slate-500'>
-      <TitleCard />
-      <Player/> 
-      <button className='btn'>
-        Add Litter
-      </button>
-      <button className='btn'>
-        Leaderboard
-      </button>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Dashboard/>}/>
+          <Route path="/Leaderboard" element={<Leaderboard/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
