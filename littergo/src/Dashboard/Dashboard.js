@@ -23,7 +23,7 @@ export function Dashboard() {
       <TitleCard />
       <Player progress={exp} function={resetCallback}/> 
       <AddLitterButton function={addCallback}/>
-          <Link to="/Leaderboard" className='btn text-center p-y-14 h-full w-full'>
+          <Link to="/Leaderboard" className='btn text-center py-14 h-full w-full'>
                 Leaderboard
           </Link>
     </div>
