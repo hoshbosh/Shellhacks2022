@@ -44,7 +44,7 @@ export function Leaderboard(){
                 </h1>
                 <PlayersList/>
             </div>
-            <div className='bg-blue-900 rounded-full text-center font-LilitaOne text-md p-4'>
+            <div className='bg-blue-900 rounded-full text-center font-LilitaOne text-sm p-4 text-white'>
                 Your Area Code: {areaCode}
             </div>
         </div>
