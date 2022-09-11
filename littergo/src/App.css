@@ -1,7 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.active{
+    @apply bg-green-200
+}
+.inactive{
+    @apply bg-gray-700
+}
 .btn{
     @apply rounded-full bg-black active:scale-110 transition font-LilitaOne text-white text-lg
 }

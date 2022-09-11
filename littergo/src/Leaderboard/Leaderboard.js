@@ -22,7 +22,7 @@ function PlayersList(){
     playerList.forEach(
         (element)=>{
             playerComponenets.push(
-                <div>
+                <div className='font-LilitaOne text-md p-8'>
                     {element}
                 </div>
             )
@@ -35,16 +35,16 @@ export function Leaderboard(){
 
     return(
         <div className='bg-slate-500 h-screen grid grid-cols-3 grid-rows-6 p-8 space-x-4 space-y-4'>
-          <Link to="/" className='btn text-center p-8'>
+          <Link to="/" className='btn text-center p-8 text-3xl'>
                 Go Back
           </Link>
-            <div className='row-span-6 bg-slate-900 rounded-3xl col-span-2 grid grid-rows-5'>
+            <div className='row-span-6 bg-slate-900 rounded-3xl col-span-2 grid grid-rows-12'>
                 <h1 className='font-LilitaOne text-center text-3xl underline row-span-2'>
                     Leaderboard
                 </h1>
                 <PlayersList/>
             </div>
-            <div className='bg-blue-900 rounded-full text-center font-LilitaOne text-3xl p-8'>
+            <div className='bg-blue-900 rounded-full text-center font-LilitaOne text-md p-4'>
                 Your Area Code: {areaCode}
             </div>
         </div>
